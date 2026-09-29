@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Dev Fundamentals Demo</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <p class="eyebrow">Codementor teaching demo</p>
+      <h1>Web Development Fundamentals</h1>
+      <p class="lede">
+        Tiny Node API + vanilla JS. Click the button to
+        <code>fetch('/api/lessons')</code> and render the roadmap in the DOM.
+      </p>
+    </header>
+
+    <section class="actions">
+      <button id="load-btn" type="button">Load lessons via fetch()</button>
+      <p id="status" class="status" aria-live="polite">Ready.</p>
+    </section>
+
+    <ul id="lesson-list" class="lesson-list"></ul>
+
+    <footer>
+      <p>Open DevTools → Network to watch the JSON response. Then read <code>lessons/</code> for notes.</p>
+    </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
